@@ -46,7 +46,7 @@
     document.getElementById('insert').onclick = function(){
             Ready();
         
-            firebase.database().ref('student').set({
+            firebase.database().ref('student/'+nameV).set({
                 NameOfStudent: nameV,
                 startedAt: firebase.database.ServerValue.TIMESTAMP
             })
