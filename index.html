@@ -39,7 +39,7 @@
         
             firebase.database().ref('student/'+horario).set({
                 NameOfStudent: nameV,
-                data: horario
+                startedAt: firebase.database.ServerValue.TIMESTAMP 
             })
         
         }
